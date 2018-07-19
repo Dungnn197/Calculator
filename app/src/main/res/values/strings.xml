@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Calculator</string>
+
+    <string name="default_result">0</string>
+    <string name="btn_special_percentage">%</string>
+    <string name="btn_special_sqrt">√</string>
+    <string name="btn_special_clear">AC</string>
+    <string name="btn_num_7">7</string>
+    <string name="btn_num_8">8</string>
+    <string name="btn_num_9">9</string>
+    <string name="btn_num_4">4</string>
+    <string name="btn_num_5">5</string>
+    <string name="btn_num_6">6</string>
+    <string name="btn_num_1">1</string>
+    <string name="btn_num_2">2</string>
+    <string name="btn_num_3">3</string>
+    <string name="btn_num_add_minus">+/-</string>
+    <string name="btn_num_0">0</string>
+    <string name="btn_num_dot">.</string>
+    <string name="btn_common_divide">/</string>
+    <string name="btn_common_multiply">*</string>
+    <string name="btn_common_minus">-</string>
+    <string name="btn_common_add">+</string>
+    <string name="btn_common_equal">=</string>
+    <string name="btn_memory_clear">MC</string>
+    <string name="btn_memory_recall">MR</string>
+    <string name="btn_memory_add">M+</string>
+    <string name="btn_memory_minus">M-</string>
 </resources>

@@ -8,4 +8,36 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextViewResult">
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@color/colorDarkGray</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/digital_7</item>
+        <item name="android:textSize">100sp</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ButtonAll">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ButtonMemory" parent="ButtonAll">
+        <item name="android:background">@drawable/button_memory</item>
+    </style>
+
+    <style name="ButtonSpecial" parent="ButtonAll">
+        <item name="android:background">@drawable/button_special</item>
+    </style>
+
+    <style name="ButtonCommon" parent="ButtonAll">
+        <item name="android:background">@drawable/button_common</item>
+    </style>
+
+    <style name="ButtonNumber" parent="ButtonAll">
+        <item name="android:background">@drawable/button_number</item>
+    </style>
+
 </resources>
