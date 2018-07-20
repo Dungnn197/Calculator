@@ -2,25 +2,27 @@ package com.badasspsycho.calculator.presenter;
 
 public interface CalculatorDataPresenter {
 
-    void clear();
+    void numberButtonClicked(String message, String number);
 
-    void inputNumber(String current, String number);
+    void operationButtonClicked(String message, String operation);
 
-    void inputPoint();
+    void equalButtonClicked(String message);
 
-    void operation(String operation);
+    void clearButtonClicked(String message);
 
-    void equal();
+    void sqrtButtonClicked(String message);
 
-    void sqrt();
+    void percentageButtonClicked(String message);
 
-    void inverseMarker();
+    void inverseMarkerButtonClicked(String message);
 
-    void getPercentage();
+    void pointButtonClicked(String message);
 
-    void inputMemory(String type);
+    void memoryClearButtonClicked(String message);
 
-    void recallMemory();
+    void memoryRecallButtonClicked(String message);
 
-    void clearMemory();
+    void memoryAddButtonClicked(String message);
+
+    void memoryMinusButtonClicked(String message);
 }

@@ -2,7 +2,6 @@ package com.badasspsycho.calculator.view.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -87,41 +86,43 @@ public class CalculatorFragment extends Fragment
     }
 
     @Override
-    public void showError(String error) {
-        tvResult.setText(error);
-    }
-
-    @Override
     public void onClick(View v) {
         switch (v.getId()) {
             // Memo buttons
             case R.id.btn_memo_clear:
+                dataPresenter.memoryClearButtonClicked(getDisplayText());
                 break;
             case R.id.btn_memo_recall:
+                dataPresenter.memoryRecallButtonClicked(getDisplayText());
                 break;
             case R.id.btn_memo_add:
+                dataPresenter.memoryAddButtonClicked(getDisplayText());
                 break;
             case R.id.btn_memo_minus:
+                dataPresenter.memoryMinusButtonClicked(getDisplayText());
                 break;
 
             // Special buttons
             case R.id.btn_clear:
+                dataPresenter.clearButtonClicked(getDisplayText());
                 break;
             case R.id.btn_sqrt:
+                dataPresenter.sqrtButtonClicked(getDisplayText());
                 break;
             case R.id.btn_percentage:
+                dataPresenter.percentageButtonClicked(getDisplayText());
                 break;
 
             // Common buttons
             case R.id.btn_common_divide:
-                break;
             case R.id.btn_common_multiply:
-                break;
             case R.id.btn_common_minus:
-                break;
             case R.id.btn_common_add:
+                dataPresenter.operationButtonClicked(getDisplayText(),
+                        ((Button) v).getText().toString());
                 break;
             case R.id.btn_common_equal:
+                dataPresenter.equalButtonClicked(getDisplayText());
                 break;
 
             // Number buttons
@@ -135,14 +136,16 @@ public class CalculatorFragment extends Fragment
             case R.id.btn_num_7:
             case R.id.btn_num_8:
             case R.id.btn_num_9:
-                dataPresenter.inputNumber(tvResult.getText().toString(),
-                        ((TextView) v).getText().toString());
+                dataPresenter.numberButtonClicked(getDisplayText(),
+                        ((Button) v).getText().toString());
                 break;
 
             // Other buttons
             case R.id.btn_marker:
+                dataPresenter.inverseMarkerButtonClicked(getDisplayText());
                 break;
             case R.id.btn_point:
+                dataPresenter.pointButtonClicked(getDisplayText());
                 break;
         }
     }
